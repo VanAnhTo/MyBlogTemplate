@@ -1,0 +1,24 @@
+ul.menu {
+	display: inline;
+}
+ul.menu li {
+	display: inline;
+
+}
+ul.menu .menutab{
+	border: solid 1px red;
+	padding: 10px;
+	border-bottom: none;
+}
+.isactive{
+	display: inline-block;
+}
+.isactive a {
+    color: black;
+}
+.tab-item{
+	display: none;
+}
+.tab-item.isactive{
+	display: block;
+}

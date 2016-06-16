@@ -108,6 +108,23 @@
 
                 </div>
 
+<script type="text/javascript">
+
+    $('.btn.btn-primary').click(function(){
+
+         var a = $('ul#comments').append('<li class ="comment clearfix" id="li1"> <div class ="clearfix"><h4>'+$('input#name').val()+'</h4></div></li>');
+         
+         var dt = new Date();
+            var time = dt.getDate()+'/'+dt.getMonth() + '/'+dt.getFullYear()+': '+ dt.getHours() + ":" + dt.getMinutes();   
+        
+        var datetime = $(a).append('<p class ="pull-right">'+time+'</p>');
+
+
+        var contentofcomment= $(a).append('<p><em>'+$('textarea#comment').val()+'</em></p>');
+
+        });
+
+    </script>
                 <ul id="comments" class="comments">
                     <li class="comment">
                         <div class="clearfix">
@@ -201,17 +218,8 @@
 
 
         </div>
-
-
-
-
-
-
         
     </div>
-
-	
-
 
     <footer>
         <div class="container">
