@@ -53,28 +53,14 @@
 
     	 $('.btn.btn-primary').click(function(){
 
-    	// 	 var a = $('ul#comments').append('<li class ="comment clearfix" id="li1"> <div class ="clearfix"><h4>'+$('input#name').val()+'</h4></div></li>');
-    		 
-    	// 	 var dt = new Date();
-    	// 		var time = dt.getDate()+'/'+dt.getMonth() + '/'+dt.getFullYear()+': '+ dt.getHours() + ":" + dt.getMinutes();	
-    		
-    	// 	var datetime = $(a).append('<p class ="pull-right">'+time+'</p>');
+//		      var a = $('<li><div class = "clearfix"><h4>' + $('input#name').val() + '</h4> \ <p><em>' + $('textarea#comment').val() + '</em></p><\li>');
 
-
-    	// 	var contentofcomment= $(a).append('<p><em>'+$('textarea#comment').val()+'</em></p>');
-
-        // var dt = new Date();
-        // var time = dt.getDate() + '/' + dt.getMonth() + '/' + dt.getFullYear() + ': ' + dt.getHours() + ":" + dt.getMinutes();
-
-         var a = $('<li><div class = "clearfix" id ="subcomment"><h4>' + $('input#name').val() + '</h4> \ <p><em>' + $('textarea#comment').val() + '</em></p><\li>');
-
-// alert($('textarea#comment').val());
-
-        $('ul#comments').append(a); 
-
-        // var htmltag = $("ul#comments").append('<li><div class = "clearfix" id ="subcomment"><h4>' + $('input#name').val() + '</h4></div> \ <p class ="pull-right">' + time + '</p> \ <p><em>' + $('textarea#comment').val() + '</em></p><\li>');
-
-        //     alert(htmltag);
+//		     $('ul#comments').append(a); 
+		var dt = new Date();
+		 var time = dt.getDate() + '/' + dt.getMonth() + '/' + dt.getFullYear() + ': ' + dt.getHours() + ":" + dt.getMinutes();
+		var a = $('<li><div class = "clearfix"><h4>' + $('input#name').val() + '</h4> \<p class ="pull-right">' + time + '</p></div> \ <p><em>' + $('textarea#comment').val() + '</em> </li>');
+		$('ul#comments').append(a);
+	     
 
 	});
     </script>
